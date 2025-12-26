@@ -8,7 +8,7 @@ const Achievements = () => {
             date: 'December 2024',
             icon: <FaCertificate />,
             description: 'Advanced React development certification covering hooks, context, and modern patterns.',
-            color: 'from-blue-500 to-blue-600',
+            color: 'bg-blue-500',
         },
         {
             title: 'Full Stack Web Development',
@@ -16,7 +16,7 @@ const Achievements = () => {
             date: 'November 2024',
             icon: <FaAward />,
             description: 'Comprehensive certification covering frontend and backend web development.',
-            color: 'from-yellow-500 to-yellow-600',
+            color: 'bg-cyan-500',
         },
         {
             title: 'JavaScript Algorithms',
@@ -24,7 +24,7 @@ const Achievements = () => {
             date: 'October 2024',
             icon: <FaTrophy />,
             description: 'Advanced algorithms and data structures certification with JavaScript.',
-            color: 'from-cyan-500 to-cyan-600',
+            color: 'bg-cyan-500',
         },
         {
             title: 'Node.js Backend Development',
@@ -32,7 +32,7 @@ const Achievements = () => {
             date: 'September 2024',
             icon: <FaCertificate />,
             description: 'Backend development with Node.js, Express, and database management.',
-            color: 'from-green-500 to-green-600',
+            color: 'bg-green-500',
         },
         {
             title: 'Git & GitHub Mastery',
@@ -40,7 +40,7 @@ const Achievements = () => {
             date: 'August 2024',
             icon: <FaAward />,
             description: 'Version control, collaboration, and advanced Git workflows.',
-            color: 'from-orange-500 to-orange-600',
+            color: 'bg-orange-500',
         },
         {
             title: 'UI/UX Design Fundamentals',
@@ -48,7 +48,7 @@ const Achievements = () => {
             date: 'July 2024',
             icon: <FaTrophy />,
             description: 'Design principles, user research, and prototyping fundamentals.',
-            color: 'from-purple-500 to-purple-600',
+            color: 'bg-purple-500',
         },
     ];
 
@@ -62,7 +62,7 @@ const Achievements = () => {
                         style={{ animationDelay: `${index * 0.1}s` }}
                     >
                         {/* Icon Header */}
-                        <div className={`bg-gradient-to-r ${achievement.color} p-6 text-white`}>
+                        <div className={`${achievement.color} p-6 text-white`}>
                             <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                                 {achievement.icon}
                             </div>

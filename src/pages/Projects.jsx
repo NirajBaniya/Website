@@ -46,7 +46,7 @@ const Projects = () => {
                         style={{ animationDelay: `${index * 0.1}s` }}
                     >
                         {/* Project Image */}
-                        <div className="relative overflow-hidden h-48 bg-gradient-to-br from-blue-100 to-yellow-100">
+                        <div className="relative overflow-hidden h-48 bg-cyan-100">
                             <img
                                 src={project.image}
                                 alt={project.title}
@@ -64,7 +64,7 @@ const Projects = () => {
                                 {project.tags.map((tag, tagIndex) => (
                                     <span
                                         key={tagIndex}
-                                        className="px-3 py-1 bg-gradient-to-r from-blue-100 to-yellow-100 text-dark text-sm font-medium rounded-full"
+                                        className="px-3 py-1 bg-cyan-100 text-dark text-sm font-medium rounded-full"
                                     >
                                         {tag}
                                     </span>

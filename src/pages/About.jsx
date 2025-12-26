@@ -25,14 +25,14 @@ const About = () => {
                 {/* Header */}
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        About <span className="gradient-text">Me</span>
+                        About <span className="text-cyan-500">Me</span>
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-primary-blue to-primary-yellow mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 {/* About Content */}
                 <div className="max-w-4xl mx-auto mb-20 animate-slide-up">
-                    <div className="bg-gradient-to-br from-blue-50 to-yellow-50 p-8 md:p-12 rounded-2xl shadow-lg">
+                    <div className="bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-200">
                         <p className="text-lg text-gray-700 leading-relaxed mb-4">
                             I'm a passionate software developer with a love for creating innovative and
                             user-friendly applications. My journey in software development has equipped me
@@ -49,7 +49,7 @@ const About = () => {
                 {/* Skills Section */}
                 <div className="mb-20">
                     <h3 className="text-3xl font-bold text-center mb-12">
-                        My <span className="gradient-text">Skills</span>
+                        My <span className="text-cyan-500">Skills</span>
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                         {skills.map((skill, index) => (
@@ -70,13 +70,13 @@ const About = () => {
                 {/* Dev Tools Section */}
                 <div>
                     <h3 className="text-3xl font-bold text-center mb-12">
-                        Dev <span className="gradient-text">Tools</span>
+                        Dev <span className="text-cyan-500">Tools</span>
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
                         {tools.map((tool, index) => (
                             <div
                                 key={tool.name}
-                                className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover text-center group border border-gray-200"
+                                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 card-hover text-center group border border-gray-200"
                                 style={{ animationDelay: `${index * 0.1}s` }}
                             >
                                 <div className={`text-5xl mb-4 ${tool.color} group-hover:scale-110 transition-transform duration-300`}>

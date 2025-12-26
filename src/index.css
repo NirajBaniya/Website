@@ -43,7 +43,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary-yellow);
+  background: #00B8D4;
 }
 
 /* Selection */

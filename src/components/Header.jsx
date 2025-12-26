@@ -29,18 +29,13 @@ const Header = () => {
     ];
 
     return (
-        <header
-            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white shadow-lg py-4'
-                    : 'bg-transparent py-6'
-                }`}
-        >
-            <nav className="container-custom mx-auto px-4">
-                <div className="flex items-center justify-between">
+        <header className="fixed top-0 left-0 w-full z-50 bg-dark border-b border-gray-700">
+            <nav className="w-full mx-auto px-6 py-4">
+                <div className="flex items-center justify-between max-w-7xl mx-auto">
                     {/* Logo */}
                     <Link
                         to="/"
-                        className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+                        className="text-2xl font-bold text-cyan-500 hover:text-cyan-400 transition-colors"
                     >
                         Niraj Baniya
                     </Link>
@@ -51,9 +46,9 @@ const Header = () => {
                             <li key={link.path}>
                                 <Link
                                     to={link.path}
-                                    className={`text-base font-medium transition-all hover:text-primary-blue ${location.pathname === link.path
-                                            // ? 'text-primary-blue border-b-2 border-primary-blue pb-1'
-                                            // : 'text-gray-700'
+                                    className={`text-base font-medium transition-all ${location.pathname === link.path
+                                            ? 'text-cyan-500'
+                                            : 'text-gray-300 hover:text-cyan-500'
                                         }`}
                                 >
                                     {link.label}
@@ -65,7 +60,7 @@ const Header = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="md:hidden text-2xl text-dark focus:outline-none"
+                        className="md:hidden text-2xl text-cyan-500 focus:outline-none"
                         aria-label="Toggle menu"
                     >
                         {isOpen ? <FaTimes /> : <FaBars />}
@@ -74,7 +69,7 @@ const Header = () => {
 
                 {/* Mobile Navigation */}
                 <div
-                    className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 mt-6' : 'max-h-0 opacity-0'
+                    className={`md:hidden overflow-hidden transition-all duration-300 bg-gray-900 ${isOpen ? 'max-h-96 opacity-100 mt-6' : 'max-h-0 opacity-0'
                         }`}
                 >
                     <ul className="flex flex-col space-y-4 pb-4">
@@ -82,9 +77,9 @@ const Header = () => {
                             <li key={link.path}>
                                 <Link
                                     to={link.path}
-                                    className={`block text-base font-medium transition-all hover:text-primary-blue ${location.pathname === link.path
-                                            ? 'text-primary-blue font-semibold'
-                                            : 'text-gray-700'
+                                    className={`block text-base font-medium transition-all ${location.pathname === link.path
+                                            ? 'text-cyan-500 font-semibold'
+                                            : 'text-gray-300 hover:text-cyan-500'
                                         }`}
                                 >
                                     {link.label}

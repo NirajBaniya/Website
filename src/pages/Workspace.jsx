@@ -14,14 +14,14 @@ const Workspace = () => {
     ];
 
     return (
-        <section className="min-h-screen py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <section className="min-h-screen py-20 bg-white">
             <div className="container-custom mx-auto px-4 pt-16">
                 {/* Header */}
                 <div className="text-center mb-12 animate-fade-in">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        My <span className="gradient-text">Workspace</span>
+                        My <span className="text-cyan-500">Workspace</span>
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-primary-blue to-primary-yellow mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 {/* Tabs */}
@@ -31,9 +31,10 @@ const Workspace = () => {
                             <Link
                                 key={tab.path}
                                 to={tab.path}
-                                className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${location.pathname === tab.path
-                                        ? 'bg-gradient-to-r from-primary-blue to-primary-yellow text-dark'
-                                        : 'text-gray-600 hover:text-dark'
+                                className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
+                                        location.pathname === tab.path
+                                            ? 'bg-cyan-500 text-white'
+                                            : 'text-gray-600 hover:text-dark'
                                     }`}
                             >
                                 {tab.label}

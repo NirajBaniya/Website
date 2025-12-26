@@ -41,14 +41,14 @@ const Contact = () => {
     };
 
     return (
-        <section className="min-h-screen py-20 bg-gradient-to-br from-white via-blue-50 to-yellow-50">
+        <section className="min-h-screen py-20 bg-white">
             <div className="container-custom mx-auto px-4 pt-16">
                 {/* Header */}
                 <div className="text-center mb-12 animate-fade-in">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        Get In <span className="gradient-text">Touch</span>
+                        Get In <span className="text-cyan-500">Touch</span>
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-primary-blue to-primary-yellow mx-auto rounded-full mb-6"></div>
+                    <div className="w-24 h-1 bg-cyan-500 mx-auto rounded-full mb-6"></div>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                         Have a project in mind or want to collaborate? Feel free to reach out!
                     </p>
@@ -71,7 +71,7 @@ const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-blue focus:outline-none transition-colors"
-                                    placeholder="John Doe"
+                                    placeholder="Enter your name"
                                 />
                             </div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-blue focus:outline-none transition-colors"
-                                    placeholder="john@example.com"
+                                    placeholder="Enter your email"
                                 />
                             </div>
 
@@ -105,7 +105,7 @@ const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-blue focus:outline-none transition-colors"
-                                    placeholder="Project Inquiry"
+                                    placeholder="Enter the subject"
                                 />
                             </div>
 
@@ -122,7 +122,7 @@ const Contact = () => {
                                     required
                                     rows="6"
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-blue focus:outline-none transition-colors resize-none"
-                                    placeholder="Tell me about your project..."
+                                    placeholder="Write your message here..."
                                 />
                             </div>
 
