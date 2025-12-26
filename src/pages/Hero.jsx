@@ -10,7 +10,7 @@ const Hero = () => {
     const fullText = [
         'Student',
         'Web Developer',
-        'IoT & Robotics Enthusiast',
+        'IoT & Robotics Trainer',
     ]
 
     useEffect(() => {
@@ -56,7 +56,7 @@ const Hero = () => {
                             <div className="absolute inset-0 bg-cyan-400 rounded-full blur-2xl opacity-30 animate-pulse"></div>
                             <img
                                 src="../niraj-profile(main).jpg"
-                                alt="Niraj Baniya - Software Developer Profile Picture"
+                                alt="Niraj Baniya - Developer Profile Picture"
                                 className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-white shadow-2xl bg-cyan-100"
                             />
                         </div>
@@ -89,7 +89,7 @@ const Hero = () => {
                             </Link>
                             <Link
                                 to="/contact"
-                                className="px-6 md:px-8 py-2 md:py-3 border-2 border-cyan-500 text-cyan-500 font-semibold rounded-full hover:bg-cyan-500 hover:text-white transition-all text-center text-sm md:text-base"
+                                className="px-6 md:px-8 py-2 md:py-3 border-2 border-cyan-500 text-black font-semibold rounded-full hover:bg-cyan-500 hover:text-white transition-all text-center text-sm md:text-base"
                             >
                                 Get In Touch
                             </Link>

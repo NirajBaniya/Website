@@ -12,4 +12,4 @@ This is my official portfolio website. This site showcases my projects, skills, 
 - Contact form and resume download
 
 ## Authors
-Designed and Developed by [Niraj Baniya](https://www.nirajbaniya.com.np) in collaboration with [Dinesh Poude](https://www.dinesh-poudel.com.np)
+Designed and Developed by [Niraj Baniya](https://www.nirajbaniya.com.np) in collaboration with [Dinesh Poudel](https://www.dinesh-poudel.com.np)

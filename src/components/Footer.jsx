@@ -57,7 +57,7 @@ const Footer = () => {
                 <div className="hidden lg:flex items-center justify-between">
                     {/* Copyright on Left */}
                     <p className="text-sm text-gray-400">
-                        © {currentYear} Niraj Baniya. All rights reserved.
+                        © {currentYear} Niraj Baniya.
                     </p>
 
                     {/* Social Media Links on Right */}
